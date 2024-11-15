@@ -29,10 +29,6 @@ jobs:
       - name: build project
         run: mvn clean install -DskipTests
 
-  docker:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: login DockerHub
         uses: docker/login-action@v3
         with:
