@@ -1,10 +1,24 @@
-# Etapa única para execução do .jar já compilado
+# BUILD
+FROM eclipse-temurin:17-jdk-alpine AS build
+
+WORKDIR /app
+
+COPY mvnw .
+COPY .mvn .mvn
+RUN chmod +x ./mvnw
+
+COPY pom.xml .
+RUN ./mvnw dependency:go-offline
+
+COPY src src
+RUN ./mvnw clean install
+
+# PACKAGE
 FROM eclipse-temurin:17-jre-alpine AS runtime
 
 WORKDIR /app
 
-# Copia o arquivo .jar da pasta target diretamente para o contêiner
-COPY target/*.jar /app/app.jar
+COPY --from=build /app/target/*.jar /app/app.jar
 
 EXPOSE ${APP_PORT}
 
