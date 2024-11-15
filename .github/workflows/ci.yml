@@ -28,7 +28,7 @@ jobs:
             ${{ runner.os }}-maven
            
       - name: build project
-        run: mvn clean install -DskipTests
+        run: ./mvnw clean install -DskipTests
         
       - name: login DockerHub
         uses: docker/login-action@v3
