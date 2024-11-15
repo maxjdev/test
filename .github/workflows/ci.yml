@@ -26,6 +26,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven
 
+      - name: upload maven artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: packaged-application
+          path: target/*.jar
+
   docker:
     needs: build
     runs-on: ubuntu-latest
@@ -44,9 +50,3 @@ jobs:
 
       - name: docker push image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/catalog:latest
-  
-      - name: upload maven artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: packaged-application
-          path: target/*.jar
