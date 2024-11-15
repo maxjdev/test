@@ -10,16 +10,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
+      - name: Checkout Code
         uses: actions/checkout@v3
         
-      - name: setup java
+      - name: Setup Java
         uses: actions/setup-java@v3
         with: 
           distribution: 'temurin'
           java-version: '17'
       
-      - name: cache maven dependencies
+      - name: Cache Maven Dependencies
         uses: actions/cache@v3
         with:
           path: ~/.m2/repository
@@ -27,22 +27,24 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven
            
-      - name: build project
+      - name: Build Project with Maven
         run: ./mvnw clean install -DskipTests
         
-      - name: login DockerHub
+      - name: Login DockerHub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
         
-      - name: build and push docker image
+      - name: Build and Push Docker Image
         uses: docker/build-push-action@v4
         with:
           push: true
+          context: .  # Define o contexto como o diretório atual
+          file: ./Dockerfile  # Certifique-se de que o Dockerfile está no root do projeto
           tags: ${{ secrets.DOCKER_USERNAME }}/catalog:latest
           
-      - name: upload maven artifact
+      - name: Upload Maven Artifact
         uses: actions/upload-artifact@v3
         with:
           name: packaged-application
