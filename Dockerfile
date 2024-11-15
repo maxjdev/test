@@ -1,16 +1,13 @@
 # BUILD
-FROM eclipse-temurin:17-jdk-alpine AS build
+FROM maven:3.9-eclipse-temurin-17-alpine AS build
 
 WORKDIR /app
 
-COPY mvnw .
-COPY .mvn .mvn
-
 COPY pom.xml .
-RUN ./mvnw dependency:go-offline
+RUN mvn dependency:go-offline
 
 COPY src src
-RUN ./mvnw clean install
+RUN mvn clean install
 
 # PACKAGE
 FROM eclipse-temurin:17-jre-alpine AS runtime
