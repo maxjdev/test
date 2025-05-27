@@ -722,6 +722,8 @@ h3.cart-title {
 }
 
 .card-detail {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -1039,7 +1041,7 @@ figure.instagram-item img.insta-image {
 /*------------ New alterations -----------*/
 
 .zindex {
-    z-index: 9;
+    z-index: 11;
 }
 
 #header {

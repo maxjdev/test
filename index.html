@@ -88,8 +88,9 @@
       <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 16 16">
         <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
       </symbol>
-    </svg>  
-    <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
+    </svg>
+
+    <header id="header" class="site-header header-scrolled position-fixed text-black bg-light zindex">
       <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -125,6 +126,7 @@
         </div>
       </nav>
     </header>
+
     <section id="billboard" class="position-relative overflow-hidden bg-light-blue" style="padding-top: 15em;">
       <div class="swiper main-swiper">
         <div class="swiper-wrapper">
@@ -147,6 +149,7 @@
         </div>
       </div>
     </section>
+
     <section id="company-services" class="padding-large">
       <div class="container">
         <div class="row">
@@ -177,6 +180,7 @@
         </div>
       </div>
     </section>
+
     <section id="mobile-products" class="product-store position-relative padding-large no-padding-top" style="margin-top: 5em;">
       <div class="container">
         <div class="row">
@@ -185,14 +189,12 @@
           </div>
           <div class="swiper product-swiper">
             <div class="swiper-wrapper">
-
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
                     <img src="images/brincos/product-item1.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
+                  <div class="cart-concern position-absolute"></div>
                   <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">PINO TORCIDO</a>
@@ -203,19 +205,19 @@
                   </div>
                 </div>
               </div>
-              
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
                     <img src="images/brincos/product-item2.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
+                  <div class="cart-concern position-absolute"></div>
                   <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">CARTIER</a>
                     </h3>
-                    <span class="item-price text-primary">R$144,00 OU 3X R$52,33</span>
+                    <p class="product-description">Brinco com design clássico e elegante da linha Cartier.</p>
+                    <span class="item-price text-primary">R$144,00 ou 3X R$52,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -224,13 +226,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item3.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">DOLCE GABBANA</a>
                     </h3>
+                    <p class="product-description">Modelo sofisticado inspirado na moda italiana.</p>
                     <span class="item-price text-primary">R$44,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -239,13 +242,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item4.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">BOLINHA JATEA</a>
                     </h3>
+                    <p class="product-description">Brinco delicado com acabamento jateado, ideal para complementar seu look.</p>
                     <span class="item-price text-primary">R$56,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -254,13 +258,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item5.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">CRAVEJADAS ZIRCÔNIA BRANCA</a>
                     </h3>
-                    <span class="item-price text-primary">R$144,0 OU 3X R$52,00</span>
+                    <p class="product-description">Brinco cravejado com zircônias brancas, brilho e sofisticação para o seu visual.</p>
+                    <span class="item-price text-primary">R$144,00 OU 3X R$52,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -269,13 +274,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item6.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">ASAS CRAVEJADAS</a>
                     </h3>
+                    <p class="product-description">Brinco inspirado em asas, cravejado com detalhes reluzentes.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$43,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -284,13 +290,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item7.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">DESIGNE TRANÇADA</a>
                     </h3>
+                    <p class="product-description">Design trançado exclusivo para quem busca estilo e personalidade.</p>
                     <span class="item-price text-primary">R$112,00 OU 3X R$40,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -299,13 +306,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item8.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">PINO CIRCULO</a>
                     </h3>
+                    <p class="product-description">Brinco circular minimalista, perfeito para o dia a dia.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$43,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -314,13 +322,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item9.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">ARGOLA TRIÂNGULO CRISTAL</a>
                     </h3>
+                    <p class="product-description">Argola com detalhe triangular e cristal, charme e delicadeza.</p>
                     <span class="item-price text-primary">R$80,00 OU 3X R$31,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -329,13 +338,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item10.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">ARGOLA LISA</a>
                     </h3>
+                    <p class="product-description">Argola lisa, peça coringa para qualquer ocasião.</p>
                     <span class="item-price text-primary">R$95,00 OU 3X R$35,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -344,13 +354,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item11.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">TARRACHA CONTRA</a>
                     </h3>
+                    <p class="product-description">Brinco com tarracha contra, segurança e conforto no uso.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$43,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -359,13 +370,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item13.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">PINO CIRCULO</a>
                     </h3>
+                    <p class="product-description">Design circular moderno, para quem ama tendências.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$43,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -374,13 +386,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item14.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">PINO CIRCULO</a>
                     </h3>
+                    <p class="product-description">Design circular moderno, para quem ama tendências.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$43,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -389,13 +402,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item15.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">PINO CIRCULO</a>
                     </h3>
+                    <p class="product-description">Design circular moderno, para quem ama tendências.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$43,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -404,13 +418,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item13.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">EAR HSCOK LISO</a>
                     </h3>
+                    <p class="product-description">Brinco modelo Ear Hscok com acabamento liso, minimalista e sofisticado.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$43,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -419,13 +434,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item14.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">design QUADRADO</a>
                     </h3>
+                    <p class="product-description">Brinco com design quadrado moderno, para quem busca inovação.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$43,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -434,13 +450,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item15.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">ZIRCÔNIA FULL COLOR</a>
                     </h3>
+                    <p class="product-description">Brinco cravejado com zircônias coloridas, para um visual vibrante.</p>
                     <span class="item-price text-primary">R$67,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -449,13 +466,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/elos_dent.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">Elos DENT</a>
                     </h3>
+                    <p class="product-description">Brinco com elos diferenciados, estilo moderno e marcante.</p>
                     <span class="item-price text-primary">R$144,00 OU 3X R$52,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -464,13 +482,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/pino_6elos.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">Pino 6 elos</a>
                     </h3>
+                    <p class="product-description">Brinco com seis elos, visual moderno e autêntico.</p>
                     <span class="item-price text-primary">R$110,00 OU 3X R$40,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -479,13 +498,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/circulo_elos.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">CIRCULO DE ELOS</a>
                     </h3>
+                    <p class="product-description">Brinco formado por elos em círculo, estilo e originalidade.</p>
                     <span class="item-price text-primary">R$120,00 OU 3X R$45,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -494,13 +514,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/pino_circulo.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">pino circulo</a>
                     </h3>
+                    <p class="product-description">Brinco pino com formato circular, essencial para qualquer coleção.</p>
                     <span class="item-price text-primary">R$152,00 OU 3X R$55,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -509,13 +530,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/trancada_fecho.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">Trançada fecho</a>
                     </h3>
+                    <p class="product-description">Design trançado e fecho seguro, para quem ama conforto e beleza.</p>
                     <span class="item-price text-primary">R$95,00 OU 3X R$35,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -524,13 +546,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/argola_cota.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">argola gota</a>
                     </h3>
+                    <p class="product-description">Argola com formato de gota, elegante e versátil.</p>
                     <span class="item-price text-primary">R$87,00 OU 3X R$31,67</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -539,13 +562,14 @@
                   <div class="image-holder">
                     <img src="images/brincos/product-item12.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">PINO MAXX</a>
                     </h3>
+                    <p class="product-description">Modelo Maxx, destaque para quem busca exclusividade.</p>
                     <span class="item-price text-primary">R$110,00 OU 3X R$40,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -553,8 +577,9 @@
           </div>
         </div>
       </div>
-      <div class="zindex swiper-pagination position-absolute text-center"></div>
+      <div class="swiper-pagination position-absolute text-center"></div>
     </section>
+
     <section id="smart-watches" class="product-store padding-large position-relative">
       <div class="container">
         <div class="row">
@@ -568,13 +593,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-1.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">GARGANTILHA PING</a>
                     </h3>
+                    <p class="product-description">Gargantilha delicada com pingente, perfeita para compor looks elegantes.</p>
                     <span class="item-price text-primary">R$130,00 OU 3X R$47,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -583,13 +609,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-2.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">MANDALA SONHOS</a>
                     </h3>
+                    <p class="product-description">Colar mandala com pingente dos sonhos, símbolo de positividade e proteção.</p>
                     <span class="item-price text-primary">R$140,00 OU 3X R$50,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -598,13 +625,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-3.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">GARANTILHA PÉROLA</a>
                     </h3>
+                    <p class="product-description">Gargantilha com pérola, sofisticada e atemporal para qualquer ocasião.</p>
                     <span class="item-price text-primary">R$140,00 OU 3X R$50,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -613,13 +641,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-4.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">GARGANTILHA GOTA</a>
                     </h3>
+                    <p class="product-description">Gargantilha com pingente em formato de gota, delicada e charmosa.</p>
                     <span class="item-price text-primary">R$130,00 OU 3X R$47,00</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -628,13 +657,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-5.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">CORAÇÃO DE PEDRAS</a>
                     </h3>
+                    <p class="product-description">Colar com pingente de coração adornado por pedras coloridas.</p>
                     <span class="item-price text-primary">R$140,00 OU 3X R$50,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -643,11 +673,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-6.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="card-detail d-flex justify-content-between pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">MANDALA CORAÇÃO</a>
                     </h3>
+                    <p class="product-description">Mandala com coração central, simbolizando amor e proteção.</p>
                     <span class="item-price text-primary">R$140,00 OU 3X R$50,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -656,13 +689,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-7.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">Cordão BAIANO</a>
                     </h3>
+                    <p class="product-description">Cordão baiano com trama diferenciada, moderno e estiloso.</p>
                     <span class="item-price text-primary">R$140,00 OU 3X R$50,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -671,13 +705,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-9.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">GARGANTILHA BORBOLETA</a>
                     </h3>
+                    <p class="product-description">Gargantilha com pingente de borboleta, delicadeza e leveza.</p>
                     <span class="item-price text-primary">R$140,00 OU 3X R$50,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -686,13 +721,14 @@
                   <div class="image-holder">
                     <img src="images/colares/colar-10.jpg" alt="product-item" class="img-fluid">
                   </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between pt-3">
+                  <div class="cart-concern position-absolute"></div>
+                  <div class="card-detail pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="#">CRUCIFIXO</a>
                     </h3>
+                    <p class="product-description">Colar com crucifixo, um clássico de fé e tradição.</p>
                     <span class="item-price text-primary">R$140,00 OU 3X R$50,33</span>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -700,96 +736,7 @@
           </div>
         </div>
       </div>
-      <div class="zindex swiper-pagination position-absolute text-center"></div>
-    </section>
-    <section id="pulseiras" class="product-store padding-large position-relative">
-      <div class="container">
-        <div class="row">
-          <div class="display-header d-flex justify-content-between pb-3">
-            <h2 class="display-7 text-dark text-uppercase">Pulseiras</h2>
-          </div>
-          <div class="swiper product-pulseira-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/pulseiras/pulseira-1.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">PONTO DE L<Label></Label></a>
-                    </h3>
-                    <span class="item-price text-primary">R$110,00 OU 3X R$40,00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/pulseiras/pulseira-5.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">ELO CORAÇÃO</a>
-                    </h3>
-                    <span class="item-price text-primary">R$110,00 OU 3X R$40,00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/pulseiras/pulseira-3.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">SHAMBALA</a>
-                    </h3>
-                    <span class="item-price text-primary">R$115,00 OU 3X R$41,67</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/pulseiras/pulseira-4.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">CORAÇÃO CRISTAL</a>
-                    </h3>
-                    <span class="item-price text-primary">R$115,00 OU 3X R$41,67</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/pulseiras/pulseira-2.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                  </div>
-                  <div class="card-detail d-flex justify-content-between pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">DUPLA FITA</a>
-                    </h3>
-                    <span class="item-price text-primary">R$190,00 OU 3X R$51,75</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="zindex swiper-pagination position-absolute text-center"></div>
+      <div class="swiper-pagination position-absolute text-center"></div>
     </section>
     <section id="yearly-sale" class="yearly-sale bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('images/single-image1.png');background-position: right; background-repeat: no-repeat;" >
       <div class="row d-flex flex-wrap align-items-center">
