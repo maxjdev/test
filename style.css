@@ -1049,6 +1049,6 @@ figure.instagram-item img.insta-image {
 }
 
 .site-header #logo {
-  max-height: 20vh; /* ajuste conforme o header */
+  max-height: 140px; /* ajuste conforme o header */
   width: auto;
 }
