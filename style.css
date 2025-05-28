@@ -1048,3 +1048,7 @@ figure.instagram-item img.insta-image {
     max-height: 24vh;
 }
 
+.site-header #logo {
+  max-height: 20vh; /* ajuste conforme o header */
+  width: auto;
+}
