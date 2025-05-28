@@ -1050,7 +1050,7 @@ figure.instagram-item img.insta-image {
 
 .logo {
   max-width: 100%;
-  max-height: 60px; /* ajuste conforme o tamanho do seu header */
+  max-height: 80px; /* ajuste conforme o tamanho do seu header */
   height: auto;
   width: auto;
   display: block;
