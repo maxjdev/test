@@ -1055,3 +1055,9 @@ figure.instagram-item img.insta-image {
   width: auto;
   display: block;
 }
+
+#yearly-sale {
+  background-image: url('images/');
+  background-position: right; 
+  background-repeat: no-repeat;
+}
